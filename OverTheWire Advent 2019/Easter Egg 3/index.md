@@ -1,8 +1,8 @@
 # Easter Egg 3
 
-Hint: https://twitter.com/OverTheWireCTF/
-Points: 10
-Solves: 36
+- Hint: https://twitter.com/OverTheWireCTF/
+- Points: 10
+- Solves: 36
 
 I am the author of this challenge.
 
