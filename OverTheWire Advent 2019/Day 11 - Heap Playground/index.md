@@ -18,9 +18,9 @@ When you run it you are presented with the following options:
 5. Exit
 ```
 
-Create chunk allows you to allocate chunks with sizes from 1 to 1024 bytes and fill it with data.
-Delete chunk allows you to free a chunk.
-Print chunk will print the contents of a chunk.
+- Create chunk allows you to allocate chunks with sizes from 1 to 1024 bytes and fill it with data.
+- Delete chunk allows you to free a chunk.
+- Print chunk will print the contents of a chunk.
 
 
 The vulnerability is in the edit_chunk function:
