@@ -61,14 +61,14 @@ with open("flag",'r') as flag:
 
 This challenge uses textbook RSA, which means there is no padding.
 
-In textbook RSA the signature is calculated with: $m^d = s (\bmod n)$
-But we don't have $d$, we only have the public key, which consists of $n$ and $e$.
+In textbook RSA the signature is calculated with: ![](https://latex.codecogs.com/png.latex?%24m%5Ed%20%3D%20s%20%28%5Cbmod%20n%29%24)
+But we don't have *d*, we only have the public key, which consists of *n* and *e*.
 
 We can abuse the following properties:
 
-- $0^d = 0 (\bmod n) = 0$
-- $1^d = 1 (\bmod n) = 1$
-- $n-1^d = n-1 (\bmod n) = n-1$
+- ![](https://latex.codecogs.com/png.latex?%240%5Ed%20%3D%200%20%28%5Cbmod%20n%29%20%3D%200%24)
+- ![](https://latex.codecogs.com/png.latex?%241%5Ed%20%3D%201%20%28%5Cbmod%20n%29%20%3D%201%24)
+- ![](https://latex.codecogs.com/png.latex?%24n-1%5Ed%20%3D%20n-1%20%28%5Cbmod%20n%29%20%3D%20n-1%24)
 
 Three cases where the message and the corresponding signature are identical. This is enough to solve the challenge.
 
@@ -92,4 +92,4 @@ r.stream()
 
 However there is another way to forge textbook signatures. 
 Instead of choosing a message we choose a random signature and generate a corresponding message:
-$m=s^e(\bmod n)$
+![](https://latex.codecogs.com/png.latex?%24m%3Ds%5Ee%28%5Cbmod%20n%29%24)
