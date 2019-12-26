@@ -1,5 +1,9 @@
 # mooo
 
+- Points: 98
+- Solves: 179
+- Author: semchapeu
+
 ## Solution 
 A web service that allows the usage of [cowsay](https://packages.ubuntu.com/bionic/cowsay).
 
