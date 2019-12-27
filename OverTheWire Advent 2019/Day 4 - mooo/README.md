@@ -1,5 +1,9 @@
 # mooo
 
+- Points: 98
+- Solves: 179
+- Author: semchapeu
+
 ## Solution 
 A web service that allows the usage of [cowsay](https://packages.ubuntu.com/bionic/cowsay).
 
@@ -23,7 +27,7 @@ EOC
 ```
 
 Cowsay uses Perl and when you use a custom cow file the Perl code in that file gets executed before the cow is printed.
-Due to several characters being blacklisted (`@, {, }, [ and ]` and `$ except when using $thoughts, $eyes or $tongue`) we need to first end the `$the_cow` string with `EOC` before we can inject Perl code.
+Due to several characters being blacklisted (`@, {, }, [ and ]` and `$ except when using $thoughts, $eyes or $tongue`) we need to first end the `$the_cow` string with `EOC` (aka `End Of Cow`) before we can inject Perl code.
 
 To print the flag we can use:
 
